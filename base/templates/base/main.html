@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>To Do List</title>
+            <meta name="description" content="">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+ 
+        <style>
+           
+            body{
+                background-color:#9cd5ce;
+                font-family: "SUSE", sans-serif;
+                padding-top: 50px;            
+                background-image: url("https://images.pexels.com/photos/301378/pexels-photo-301378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+            }
+            a,
+            p{
+                color: #4b5156
+            }
+
+            .container {
+                max-width: 550px;
+                margin: auto;
+                background-color: #fff;
+                -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+                box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            }
+
+            input {
+                outline: none;
+                border: none;
+            }
+
+
+            .header-bar {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #16887b 0%, #16887b 43%, #16887b 100%);
+            }
+
+
+
+            .sofadi-one-regular {
+                font-family: "Sofadi One", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .header-bar a {
+            color: rgb(247, 247, 247);
+            text-decoration: none;
+            }
+
+            .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-top: 1px solid #dfe4ea;
+            overflow: hidden;
+            }
+
+            .task-complete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 192, 105);
+            border-radius: 50%;
+            }
+
+            .task-incomplete-icon {
+                height: 20px;
+                width: 20px;
+                background-color: rgb(218, 218, 218);
+                border-radius: 50%;
+            }
+
+            .delete-link {
+            text-decoration: none;
+            font-weight: 900;
+            color: #cf4949;
+            font-size: 22px;
+            line-height: 0;
+            padding: 20px 0px;
+            }
+            #add-link {
+            color: #137d72;
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: 1px 1px #81413b;
+            }
+
+            .button {
+            border: 1px solid #757575;
+            background-color: #0f7e73;
+            color: #FFFF;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            }
+            
+            .card-body {
+            padding: 20px;
+            }
+
+
+            input[type=text],
+            input[type=password],
+            textarea {
+            border: 1px solid #757575;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+            }
+            .card-body {
+            padding: 20px;
+            }
+
+
+
+        </style>
+
+        <div class="box" style="--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"></div>
+
+
+        </head>
+        
+        <body>
+            
+            <div class='container' >
+                {% block content%}
+
+
+                {% endblock content %}
+
+            </div>
+
+    </body>
+</html>
